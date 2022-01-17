@@ -1,0 +1,42 @@
+html {
+    --font-default: 1.5em;
+    --font-m : 2em;
+    --font-s : 2.5em;
+    --font-xs : 3em;
+}
+.f--default {
+    font-size: var(--font-default);
+}
+.f--m {
+    font-size: var(--font-m);
+}
+.f--s {
+    font-size: var(--font-s);
+}
+.f--xs {
+    font-size: var(--font-xs);
+}
+
+.a--none {
+    text-decoration: none;
+}
+
+.a--family{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.background--white {
+    background-color: white;
+}
+
+.background--black {
+    background-color: black;
+}
+
+.color--black {
+    color: black;
+}
+
+.color--white {
+    color: white;
+}

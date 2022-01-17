@@ -1,0 +1,27 @@
+.display--block {
+    display: block;
+}
+
+.display--inlineblock {
+    display: inline-block;
+}
+
+.display--none {
+    display: none;
+}
+
+.position--absolute {
+    position: absolute;
+}
+
+.postion--fixed {
+    position: fixed;
+}
+
+.posistion--sticky {
+    position: sticky;
+}
+
+.float--left {
+    float: left;
+}

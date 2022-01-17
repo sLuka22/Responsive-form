@@ -1,0 +1,54 @@
+.header {
+    background-color: #404faf;
+}
+
+.logo-pic {
+    height: 50px;
+    width: 150px;
+    padding: 5px;
+}
+
+.header__items {
+    width: 900px;
+}
+
+.header__ahref1{
+    padding-right: 25px;
+}
+
+.header__ahref a{
+    color: white;
+    padding: 25px 16px;
+    margin: 0;
+}
+
+.header__ahref a:hover{
+    background-color: white;
+    color: black;
+}
+
+.slideshow__picture {
+    height: 500px;
+    width: 100%;
+}
+
+.categories {
+    top: 0;
+    background-color: #404faf;
+}
+
+.categories__items {
+    width: 900px;
+    background-color: #404faf;
+}
+
+.categories__items a{
+    color: white;
+    padding: 25px 16px;
+    margin: 0;
+}
+
+.categories__items a:hover{
+    background-color: white;
+    color: black;
+}

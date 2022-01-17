@@ -1,0 +1,32 @@
+.content {  
+    margin: 25px 0px;
+}
+
+.content__banner{
+    background-color: lightgrey;
+    height: 900px;
+    width: 300px;
+}
+
+.content__box{
+    padding: 10px;
+    max-width: 900px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content__section {
+    margin: 25px 0px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.instagram-media {
+    margin: 5px 10px 10px 0px;
+}
+
+.content__picture {
+    margin: 5px 10px 10px 0px;
+    height: 270px;
+    min-height: 270px;
+    width: 350px;
+}

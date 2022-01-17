@@ -1,0 +1,61 @@
+body {
+    background-image: url(form_wallpaper.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    height: 100vh;
+}
+
+.border--oval{
+    border-radius: 5px;
+    border: solid 2px lightgrey;
+    padding: 5px 10px;
+}
+
+.form{
+    width: 600px;
+    background-color: white;
+    padding: 25px 45px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form__box{
+    width: 100%;
+    overflow: hidden;
+}
+
+.form__element{
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing:border-box;
+}
+
+.border--color {
+    background-color: #404faf;
+}
+
+.test {
+    border: none;
+}
+
+@media (min-width: 693px) {
+    .form--box-firstRow{
+        display: flex;
+    }
+    .form__element--modify {
+        width: 33%;
+    }
+    .form__element--margin {
+        margin: 0px 10px;
+    }
+}
+
+#display--textarea {
+    display: none;
+}
+
+#display--checkbox {
+    display: none;
+}

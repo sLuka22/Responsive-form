@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="flex.css">
+    <link rel="stylesheet" href="typography.css">
+    <link rel="stylesheet" href="positions.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="custom.css">
+    <title>Form page</title>
+    <script>
+        (function () {
+            function initOptionToggle () {
+                console.log('inited')
+                const selectEl = document.getElementById("mySelect")
+                const option1El = document.getElementById('option1')
+                const option2El = document.getElementById('option2')
+                if (!selectEl || !option1El || !option2El) return
+
+                option1El.style.display = 'none'
+                option2El.style.display = 'none'
+    
+                selectEl.addEventListener('change', function () {
+                    toggleOption(selectEl.value, option1El, option2El)
+                })
+            }
+    
+            function toggleOption(activeOption, option1El, option2El) {
+                switch (activeOption) {
+                    case 'option1':
+                        option1El.style.display = 'block'
+                        option2El.style.display = 'none'
+                        break
+                    case 'option2':
+                        option1El.style.display = 'none'
+                        option2El.style.display = 'flex'
+                        break
+                    default:
+                }
+    
+    
+                // console.log(x)
+                // if (x == "option1") {
+                //     document.getElementById('display--textarea').style.display = "block";
+                //     document.getElementById('display--checkbox').style.display = "none";
+                // }
+                // else if (x == "option2") {
+                //     document.getElementById('display--checkbox').style.display = "flex";
+                //     document.getElementById('display--textarea').style.display = "none";
+                // }
+          }
+    
+          document.addEventListener('DOMContentLoaded', initOptionToggle)
+        })()
+    </script>
+</head>
+<body>
+    <div class="container flex flex--mainaxis-center flex--crossaxis-center f--l">
+
+        <div class="form flex flex--mainaxis-center flex--crossaxis-center border--oval">
+            <div class="form__box">
+                <div class="form--box-firstRow">
+                    <div class="form__element--modify">
+                        <select class="form__element f--default border--oval">
+                            <option value="">G/Ga.</option>
+                            <option value="g">G.</option>
+                            <option value="ga">Ga.</option>
+                        </select>
+                    </div>
+                    <div class="form__element--modify form__element--margin">
+                        <input type="text" required placeholder="Name" class="form__element border--oval f--default">
+                    </div>
+                    <div class="form__element--modify">
+                        <input type="text" required placeholder="Surname" class="form__element border--oval f--default">
+                    </div>
+                </div>
+                <div>
+                    <select id="mySelect" class="form__element border--oval f--default">
+                        <option value="">Izberi model</option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                    </select>
+                </div>
+                <div id="option1">
+                    <textarea class="form__element border--oval f--default" placeholder="Vnesi podatke: "></textarea>
+                </div>
+                <div id="option2" class="flex flex--around form__element">
+                    <div>
+                        <div>
+                            <input type="radio" class="f--default" name="horns">
+                            <label for="horns" class="f--default">Horns</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="f--default" name="horns">
+                            <label for="horns" class="f--default">Horns</label>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="checkbox" class="f--default" name="horns">
+                            <label for="horns" class="f--default">Horns</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="f--default larger-check" name="horns">
+                            <label for="horns" class="f--default">Horns</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex--mainaxis-end">
+                    <div>
+                        <input type="submit" class="test border--color border--oval color--white f--default">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="date.js"></script> -->
+</body>
+</html>

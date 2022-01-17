@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+@media (max-with: 700px) {
+    body{
+        font-size: 1.4rem;
+    }
+}
