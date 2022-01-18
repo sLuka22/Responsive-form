@@ -17,6 +17,7 @@
             function initOptionToggle () {
                 console.log('inited')
                 const selectEl = document.getElementById("mySelect")
+                const optionsEl = document.getElementById('options')
                 const option1El = document.getElementById('option1')
                 const option2El = document.getElementById('option2')
                 if (!selectEl || !option1El || !option2El) return
@@ -25,11 +26,11 @@
                 option2El.style.display = 'none'
     
                 selectEl.addEventListener('change', function () {
-                    toggleOption(selectEl.value, option1El, option2El)
+                    toggleOption(selectEl.value, optionsEl, option1El, option2El)
                 })
             }
     
-            function toggleOption(activeOption, option1El, option2El) {
+            function toggleOption(activeOption, optionsEl, option1El, option2El) {
                 switch (activeOption) {
                     case 'option1':
                         option1El.style.display = 'block'
@@ -38,6 +39,10 @@
                     case 'option2':
                         option1El.style.display = 'none'
                         option2El.style.display = 'flex'
+                        break
+                    case 'options':
+                        option1El.style.display = 'none'
+                        option2El.style.display = 'none'
                         break
                     default:
                 }
@@ -80,7 +85,7 @@
                 </div>
                 <div>
                     <select id="mySelect" class="form__element border--oval f--default">
-                        <option value="">Izberi model</option>
+                        <option value="options">Izberi model</option>
                         <option value="option1">Option 1</option>
                         <option value="option2">Option 2</option>
                     </select>
